@@ -74,7 +74,7 @@ def loop_test(
     solutions = cobra.sampling.sample(model, 1000, processes = threads)
     # round fluxes that are suspiciously close to zero to make sure we
     # definitely skip all reactions that could never have flux
-    solutions = solutions.applymap(lambda x: 0 if abs(x) < zero_thresh else x)
+    solutions = solutions.map(lambda x: 0 if abs(x) < zero_thresh else x)
     non_zero_rxn_fluxes = solutions[
         solutions.columns[(solutions != 0).all(axis = 0)]
     ]

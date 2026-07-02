@@ -12,10 +12,10 @@ setup(
     version="0.1.0",
     packages=find_packages(),
     install_requires = [
-        'cobra~=0.29.0',
-        'networkx~=3.1',
-        'numpy==1.26.4',
-        'pandas~=2.0.3',
-        'Pebble~=5.0.7'
+        'cobra>=0.29.0',
+        'networkx>=3.1',
+        'numpy>=1.26.4',
+        'pandas>=2.0.3',
+        'Pebble>=5.0.7'
     ],
 )
