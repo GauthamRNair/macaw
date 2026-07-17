@@ -1,3 +1,4 @@
+LICENSE.txt
 README.md
 setup.py
 macaw/__init__.py
@@ -10,4 +11,5 @@ macaw/utils.py
 macaw.egg-info/PKG-INFO
 macaw.egg-info/SOURCES.txt
 macaw.egg-info/dependency_links.txt
+macaw.egg-info/requires.txt
 macaw.egg-info/top_level.txt
